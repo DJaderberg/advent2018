@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Advent2018", "Advent2018\Advent2018.fsproj", "{80E00890-1687-40B4-9D76-A5D0ADE76AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent2018Csharp", "Advent2018Csharp\Advent2018Csharp.csproj", "{2B283B6F-DC30-4FB0-8A4E-4126B2C11E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80E00890-1687-40B4-9D76-A5D0ADE76AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E00890-1687-40B4-9D76-A5D0ADE76AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E00890-1687-40B4-9D76-A5D0ADE76AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E00890-1687-40B4-9D76-A5D0ADE76AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B283B6F-DC30-4FB0-8A4E-4126B2C11E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B283B6F-DC30-4FB0-8A4E-4126B2C11E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B283B6F-DC30-4FB0-8A4E-4126B2C11E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B283B6F-DC30-4FB0-8A4E-4126B2C11E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
