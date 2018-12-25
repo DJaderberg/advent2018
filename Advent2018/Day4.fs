@@ -19,7 +19,7 @@ type Day4Class () =
         ()
 
     [<Test>]
-    member this.Day4Part1 () =
+    member this.Part1 () =
         let timeRegex = new Regex("\[(?<time>.*)\] (?<info>.*)")
         let file = "../../../../../../code/advent/input4.txt"
         let lines = System.IO.File.ReadLines(file)
@@ -70,7 +70,7 @@ type Day4Class () =
         raise (new Exception(res.ToString())) |> ignore
 
     [<Test>]
-    member this.Day4Part2 () =
+    member this.Part2 () =
         let timeRegex = new Regex("\[(?<time>.*)\] (?<info>.*)")
         let file = "../../../../../../code/advent/input4.txt"
         let lines = System.IO.File.ReadLines(file)
@@ -114,7 +114,6 @@ type Day4Class () =
                     map.Add (minute, 1)
             range |> Seq.fold (incrementMinute) map
         let sleepsPerMinute id = Seq.filter (fun (i,_,_) -> i = id) sleeps |> Seq.fold incrementMinuteRange Map.empty |> Map.toList |> Seq.maxBy snd
-        let sleepsPerMinuteFst id = Seq.filter (fun (i,_,_) -> i = id) sleeps |> Seq.fold incrementMinuteRange Map.empty |> Map.toList |> Seq.maxBy snd
         let guards = sleeps |> Seq.map (fun (id,_,_) -> id)  |> Seq.distinct //|> Seq.fold (fun map id -> Map.add id Map.empty map) Map.empty
         let guard = guards |> Seq.maxBy (fun guard -> snd (sleepsPerMinute guard))
         let minute = fst (sleepsPerMinute guard)
