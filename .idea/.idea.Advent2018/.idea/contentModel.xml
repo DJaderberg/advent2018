@@ -13,6 +13,7 @@
         <e p="Day1.fs" t="Include" />
         <e p="Day4.fs" t="Include" />
         <e p="Day5.fs" t="Include" />
+        <e p="Day7.fs" t="Include" />
         <e p="Program.fs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
