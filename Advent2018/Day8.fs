@@ -2,7 +2,6 @@ namespace Tests
 
 open System
 open NUnit.Framework
-open System.Text.RegularExpressions
 
 type Tree = Node of Tree list * int list
 
