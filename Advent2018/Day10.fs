@@ -5,7 +5,6 @@ open NUnit.Framework
 open System.Text.RegularExpressions
 
 module Day10 =
-    //let regex = new Regex("position=<\\s*(<?posX>\\d+),\\s*(<?posY>\\d+)>\\s*velocity=<\\s*(<?velX>\\d+),\\s*(<?velY>\\d+)>")
     let regex = new Regex("position=<\s*(?<posX>-?\d+),\s*(?<posY>-?\d+)>\s*velocity=<\s*(?<velX>-?\d+),\s*(?<velY>-?\d+)>")
     let getGroup (name : string) (expMatch : Match) = expMatch.Groups.[name].ToString()
     let parseLine line = line |> regex.Match |> (fun m -> ((int (getGroup "posX" m), int (getGroup "posY" m)),(int (getGroup "velX" m), int (getGroup "velY" m))))
