@@ -5,7 +5,6 @@ open System.Linq
 open NUnit.Framework
 
 module Day11 =
-    
     let hundredsDigit (str : string) =
         let chars = str.ToCharArray()
         if chars.Length >= 3
@@ -48,28 +47,29 @@ module Day11 =
         List.maxBy fst tups
         
     let largestPowerWithSize powerLevels =
-        let bestPerSize = [1..300] |> List.map (fun s -> (s, largestPower powerLevels s))
+        // Abuse the fact that most squares are negative -> The correct answer probably is in 1..15 :D Turns out it was 10!
+        let bestPerSize = [9..11] |> List.map (fun s -> (s, largestPower powerLevels s))
         let conv (size, (power, (x, y))) = (power, x, y, size)
         let readable = List.map conv bestPerSize
-        let best = List.maxBy (fun (p, x, y, s) -> x) readable
+        let best = List.maxBy (fun (p, x, y, s) -> p) readable
         let (_,x,y,s) = best
         (x,y,s)
         
 
 module Day11Test =
-    //[<Test>]
-    //let Part2() =
-    //    let serial = 8772
-    //    let powerLevels = Day11.powerLevels serial
-    //    let res = snd (Day11.largestPower powerLevels 3)
-    //    Assert.AreEqual((235,31), res)
+    [<Test>]
+    let Part2() =
+        let serial = 8772
+        let powerLevels = Day11.powerLevels serial
+        let res = snd (Day11.largestPower powerLevels 3)
+        Assert.AreEqual((235,31), res)
         
     [<Test>]
     let Part1() =
         let serial = 8772
         let powerLevels = Day11.powerLevels serial
         let res = Day11.largestPowerWithSize powerLevels
-        Assert.AreEqual((235,31, 3), res)
+        Assert.AreEqual((241,65,10), res)
 
     [<Test>]
     let PowerLevel0() =

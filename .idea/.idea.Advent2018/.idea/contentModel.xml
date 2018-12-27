@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Advent2018.2055963043.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_Advent2018.2055963043.00" t="ExcludeRecursive" />
     <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.12.0/build/netcoreapp1.0/NUnit3.TestAdapter.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.12.0/build/netcoreapp1.0/NUnit3.TestAdapter.pdb" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.12.0/build/netcoreapp1.0/nunit.engine.netstandard.dll" t="Include" />
@@ -13,6 +13,7 @@
         <e p="Day1.fs" t="Include" />
         <e p="Day10.fs" t="Include" />
         <e p="Day11.fs" t="Include" />
+        <e p="Day12.fs" t="Include" />
         <e p="Day4.fs" t="Include" />
         <e p="Day5.fs" t="Include" />
         <e p="Day7.fs" t="Include" />
@@ -25,7 +26,7 @@
       <e p="Advent2018.sln" t="IncludeFlat" />
       <e p="Advent2018Csharp" t="IncludeRecursive">
         <e p="Advent2018Csharp.csproj" t="IncludeRecursive" />
-        <e p="Day4.cs" t="Include" />
+        <e p="Day13.cs" t="Include" />
         <e p="Days.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
