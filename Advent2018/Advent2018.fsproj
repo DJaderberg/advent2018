@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -17,6 +17,7 @@
         <Compile Include="Day10.fs" />
         <Compile Include="Day11.fs" />
         <Compile Include="Day12.fs" />
+        <Compile Include="Day14.fs" />
         <Compile Include="Day4.fs" />
         <Compile Include="Day5.fs" />
         <Compile Include="Day7.fs" />
